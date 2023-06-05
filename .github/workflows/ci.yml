@@ -37,7 +37,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: ghcr.io/unsafesystems/atlantis:latest,ghcr.io/unsafesystems/atlantis:${{ github.ref_name }}
+          tags: ghcr.io/unsafesystems/atlantis:latest,ghcr.io/unsafesystems/atlantis:${{ github.ref_name }},public.ecr.aws/m0m7e8y4/atlantis:latest,public.ecr.aws/m0m7e8y4/atlantis:${{ github.ref_name }}
           platforms: linux/amd64,linux/arm64
           build-args: |
             "ATLANTIS_VERSION=${{ github.ref_name }}"
