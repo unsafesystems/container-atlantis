@@ -1,3 +1,5 @@
+LABEL org.opencontainers.image.source = "https://github.com/unsafesystems/atlantis"
+
 ARG ATLANTIS_VERSION
 FROM ghcr.io/runatlantis/atlantis:${ATLANTIS_VERSION}
 
