@@ -1,3 +1,7 @@
-# Atlantis + Terragrunt container
+# Atlantis + Terraform + Terragrunt + Terraspace container
 
-This repository provides a combined atlantis and terragrunt docker container.
+This repository provides a combined image for:
+- Atlantis
+- Terraform
+- TerraGrunt
+- TerraSpace
