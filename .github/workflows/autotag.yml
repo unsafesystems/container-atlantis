@@ -21,7 +21,7 @@ jobs:
       - name: Read version from file
         run: |
           echo "previous_version=${{ steps.previoustag.outputs.tag }}" >> "$GITHUB_ENV"
-          CURRENT_VERSION=$(cat "Dockerfile" | grep "FROM" | cut -d ":" -f 2)
+          CURRENT_VERSION=$(head -n 1 "Dockerfile" | grep "FROM" | cut -d ":" -f 2 | cut -d " " -f 1)
           echo "current_version=${CURRENT_VERSION}" >> "$GITHUB_ENV"
       - name: Set new tag
         if: env.previous_version != env.current_version
