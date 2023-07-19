@@ -1,4 +1,4 @@
-FROM ghcr.io/runatlantis/atlantis:v0.24.3 as deps
+FROM ghcr.io/runatlantis/atlantis:v0.24.4 as deps
 
 FROM ruby:3.2.2-alpine3.18
 
