@@ -1,6 +1,6 @@
 FROM ghcr.io/runatlantis/atlantis:v0.27.1 as deps
 
-FROM ruby:3.3.0-alpine3.18
+FROM ruby:3.3.1-alpine3.18
 
 LABEL org.opencontainers.image.source = "https://github.com/unsafesystems/container-atlantis"
 
